@@ -1,0 +1,26 @@
+$text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+$code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
+
+
+
+$text-color: rgb(34, 34, 34) !default;
+$brand-color: rgb(229, 0, 80) !default;
+$light-grey: rgb(237, 237, 237) !default;
+
+$max-width: 1180px !default;
+
+$breakpoint-small: 320px !default;
+$breakpoint-medium: 768px !default;
+$breakpoint-large: 1024px !default;
+
+$SCALE--2: 1rem * 0.75;
+$SCALE--1: 1rem * 0.875;
+$SCALE-0: 1rem;
+$SCALE-1: 1rem * 1.125;
+$SCALE-2: 1rem * 1.25;
+$SCALE-3: 1rem * 1.5;
+$SCALE-4: 1rem * 1.75;
+$SCALE-5: 1rem * 2.5;
+
+///   $base-url: 'http://cdn.example.com/assets/';
+$base-url: '/assets/' !default;
