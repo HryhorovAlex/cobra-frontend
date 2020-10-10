@@ -11,9 +11,9 @@ import { Root } from './router/Root';
 const Index = (): JSX.Element => {
   return (
     <React.StrictMode>
-            <Router>
-              <Root />
-            </Router>
+      <Router>
+        <Root />
+      </Router>
     </React.StrictMode>
   )
 }

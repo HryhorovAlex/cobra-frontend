@@ -3,9 +3,11 @@ import './SignUp.styles.scss';
 import Cobras from '../../assets/images/cobra-main.png';
 import { SignUpForm } from './SignUpForm';
 
-interface SignUpProps {};
+interface SignUpProps {
+  history: any
+};
 
-export const SignUp: React.FC<SignUpProps> = ({}) => {
+export const SignUp: React.FC<SignUpProps> = ({history}) => {
   return (
     <div className='page sign-up flex-row-fs-fs'>
       <div className='sign-up__info-block'>
@@ -35,7 +37,10 @@ export const SignUp: React.FC<SignUpProps> = ({}) => {
         </span>
       </div>
       <div className='sign-up__form-wrapper'>
-        <SignUpForm handleSubmit={(values: any) => console.log('Cobras Submit', values)} />
+        <SignUpForm handleSubmit={(values: any) => {
+          console.log('Cobras Submit', values)
+          history.push('/home')
+        }} />
       </div>
     </div>
   )

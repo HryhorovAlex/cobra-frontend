@@ -13,7 +13,9 @@ export const SignUpForm: React.FC<SignUpFormProps> = ({handleSubmit}) => {
     <div className='sign-up__form'>
        <Formik
         initialValues={initialValues}
-        onSubmit={(values) => handleSubmit(values)}
+        onSubmit={(values) => {
+          handleSubmit(values)
+        }}
        >
          {({
          values,
