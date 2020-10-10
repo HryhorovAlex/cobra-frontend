@@ -5,8 +5,9 @@ import { Home, SignUp } from "../pages";
 export const Root: React.FC = () => {
   return (
     <Switch>
-      <Route exact path='/sign-up' render={(props) => <SignUp {...props} />}/>
-      <Route path='/' render={(props) => <Home {...props} />} />
+      {/* <Route exact path='/sign-up' render={(props) => <SignUp {...props} />}/> */}
+      <Route exact path='/' render={(props) => <SignUp {...props} />}/>
+      <Route path='/home' render={(props) => <Home {...props} />} />
     </Switch>
   );
 };
