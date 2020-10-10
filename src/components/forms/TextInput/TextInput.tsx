@@ -7,7 +7,7 @@ interface TextInputProps extends React.DetailedHTMLProps<React.InputHTMLAttribut
   variant?: "primary"
 };
 
-export const TextInput: React.FC<TextInputProps> = ({label = '', className, variant ='primary', ...props}) => {
+export const TextInput: React.FC<TextInputProps> = ({label = '', className = '', variant ='primary', ...props}) => {
 
   return (
     <label className={`text-input flex-col-fs-fs  ${className}`}>

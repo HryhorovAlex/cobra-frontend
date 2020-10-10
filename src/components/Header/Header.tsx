@@ -16,7 +16,7 @@ export const Header: React.FC<HeaderProps> = ({}) => {
         <span>Under construction</span>
       </div>
       <div className='header__logo flex-row-fc-fc'>
-        <Link to='/' className='no-outline'>Go to Sign Up</Link>
+        <Link to='/' className='no-outline'>Go to Login</Link>
       </div>
     </div>
   )

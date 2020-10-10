@@ -1,0 +1,32 @@
+@import '../../styles/abstracts/variables';
+
+.login {
+  background-color: $color-main-bgc;
+  padding-top: 200px;
+}
+
+.login-logo-block {
+  margin-bottom: 50px;
+  img {
+    margin-right: 20px;
+  }
+  span {
+    font-size: 40px;
+    color: #b3b5b8;
+  }
+}
+
+.login__input {
+  margin-bottom: 20px;
+  width: 460px;
+}
+
+.login__submit-block {
+  width: 460px;
+  padding-top: 25px;
+  span {
+    font-size: 20px;
+    color: #b3b5b8;
+    font-weight: 500;
+  }
+}
