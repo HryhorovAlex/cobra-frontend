@@ -1,0 +1,24 @@
+@import '../../styles/abstracts/variables';
+
+.sign-up {
+  background-color: $color-main-bgc;
+  padding: 50px 50px 50px 50px;
+}
+
+.sign-up__info-block {
+  width: 40%;
+}
+
+.info-block__img-wrapper {
+  margin-bottom: 150px;
+  .sign-up__cobra-title {
+    font-size: 50px;
+    color: #dfe6e9;
+    margin-right: 30px;
+  }
+}
+
+.sign-up__agreement {
+  font-size: 20px;
+  color: #dfe6e9;
+}
