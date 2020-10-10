@@ -39,7 +39,7 @@ export const SignUp: React.FC<SignUpProps> = ({history}) => {
       <div className='sign-up__form-wrapper'>
         <SignUpForm handleSubmit={(values: any) => {
           console.log('Cobras Submit', values)
-          history.push('/home')
+          history.push('/main/home')
         }} />
       </div>
     </div>

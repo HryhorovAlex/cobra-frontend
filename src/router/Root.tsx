@@ -8,7 +8,7 @@ export const Root: React.FC = () => {
     <Switch>
       {/* <Route exact path='/sign-up' render={(props) => <SignUp {...props} />}/> */}
       <Route exact path='/' render={(props) => <SignUp {...props} />}/>
-      <Route path='/home' component={Main} />
+      <Route path='/main' component={Main} />
     </Switch>
   );
 };

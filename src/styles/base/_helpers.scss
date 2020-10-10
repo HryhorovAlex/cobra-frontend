@@ -60,16 +60,24 @@
   min-width: 100vw;
 }
 
+.page-header {
+  flex-grow: 1;
+  width: 100%;
+}
+
 .no-outline {
   outline: none;
+  text-decoration: none;
 }
 
 .no-outline:focus {
   outline: none;
+  text-decoration: none;
 }
 
 .no-outline:hover {
   outline: none;
+  text-decoration: none;
 }
 
 // layouts flex  rules---------
