@@ -38,11 +38,39 @@
   white-space: nowrap;
 }
 
+.clicked-anime {
+  transform: scale(1);
+  opacity: 1;
+  transition: all 0.1s linear;
+  cursor: pointer;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.clicked-anime:active {
+  transform: scale(0.9);
+  opacity: 0.8;
+  transition: all 0.1s linear;
+}
+
 .page {
   min-height: 100vh;
   min-width: 100vw;
 }
 
+.no-outline {
+  outline: none;
+}
+
+.no-outline:focus {
+  outline: none;
+}
+
+.no-outline:hover {
+  outline: none;
+}
 
 // layouts flex  rules---------
 // 1 flex

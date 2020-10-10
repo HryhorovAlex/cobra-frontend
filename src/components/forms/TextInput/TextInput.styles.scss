@@ -1,0 +1,30 @@
+@import '../../../styles/abstracts/variables';
+
+.text-input {
+  min-width: 200px;
+  max-width: 500px;
+
+  input {
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    // color: #81ecec;
+  }
+}
+
+.text-input__label {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #dfe6e9;
+}
+
+.text-input__input--primary {
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #90f1de;
+  color: #5cddc3;
+}
+
+.text-input__input--primary:focus {
+  border-bottom: 2px solid #00b894;
+}

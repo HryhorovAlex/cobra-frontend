@@ -14,11 +14,25 @@
   .sign-up__cobra-title {
     font-size: 50px;
     color: #dfe6e9;
-    margin-right: 30px;
+    width: 325px;
   }
 }
 
 .sign-up__agreement {
   font-size: 20px;
   color: #dfe6e9;
+}
+
+.sign-up__form-wrapper {
+  padding: 70px 0 0 100px;
+  flex-grow: 1;
+}
+
+.sign-up__text-input {
+  margin-bottom: 25px;
+  width: 400px;
+}
+
+.sign-up__submit-wrapper {
+  width: 400px;
 }

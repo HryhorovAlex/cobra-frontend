@@ -1,0 +1,85 @@
+@import "../../../styles/abstracts/variables";
+
+.checkbox-wrapper {
+  display: inline-block;
+}
+
+.checkbox-wrapper-small {
+  transform: scale(0.75);
+}
+
+.checkbox__label--right {
+  margin-left: 10px
+}
+
+.checkbox__label--left {
+  margin-right: 10px
+}
+
+.checkbox__label {
+  font-weight: 500;
+  font-size: 16px;
+  color: #00b894;
+}
+// wrapper config
+
+.checkmark {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  border-radius: 3px;
+  position: relative;
+  border: 1.4px solid #55efc4;
+}
+
+.checkmark-mark-circle {
+  border-radius: 50%;
+  border-color: #55efc4;
+}
+
+.checkmark-dot {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  border-width: 2.5px;
+}
+
+// check mark config
+
+.checkmark::after {
+  content: "";
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotateZ(40deg);
+  opacity: 0;
+  transition: all .4s;
+}
+
+.checkmark-mark-square::after {
+  width: 7px;
+  height: 15px;
+  border-right: 2px solid #55efc4;
+  border-bottom: 2px solid #55efc4;
+}
+
+.checkmark-mark-circle::after {
+  width: 6px;
+  height: 12px;
+  top: 45%;
+  border-color: #55efc4;
+}
+
+.checkmark-dot::after {
+  width: 10px;
+  height: 10px;
+  top: 50%;
+  border-radius: 50%;
+  background-color: #55efc4;
+}
+
+
+#check:checked ~ .checkmark::after {
+  opacity: 1;
+}
