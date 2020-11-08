@@ -2,12 +2,14 @@ import React from 'react';
 import './SignUp.styles.scss';
 import Cobras from '../../assets/images/cobra-main.png';
 import { SignUpForm } from './SignUpForm';
+import { useSignUpHooks } from './use-sign-up-hooks';
 
 interface SignUpProps {
   history: any
 };
 
 export const SignUp: React.FC<SignUpProps> = ({history}) => {
+  const { loading, error, signUp } = useSignUpHooks();
   return (
     <div className='page sign-up flex-row-fs-fs'>
       <div className='sign-up__info-block'>
@@ -37,11 +39,17 @@ export const SignUp: React.FC<SignUpProps> = ({history}) => {
         </span>
       </div>
       <div className='sign-up__form-wrapper'>
-        <SignUpForm handleSubmit={(values: any) => {
-          console.log('Cobras Submit', values)
-          history.push('/main/home')
-        }} />
+        <SignUpForm
+          loading={loading}
+          error={error}
+          handleSubmit={signUp}
+        />
       </div>
     </div>
   )
 }
+
+{/* handleSubmit={(values: any) => {
+          console.log('Cobras Submit', values)
+          history.push('/main/home')
+        }}/</div> */}

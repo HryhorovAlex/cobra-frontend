@@ -5,6 +5,8 @@ import { Button, Checkbox, TextInput } from '../../components';
 
 interface SignUpFormProps {
   handleSubmit: Function;
+  loading: boolean;
+  error: any;
 }
 
 export const SignUpForm: React.FC<SignUpFormProps> = ({handleSubmit}) => {

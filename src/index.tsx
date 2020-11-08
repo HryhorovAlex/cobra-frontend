@@ -5,16 +5,20 @@ import './styles/main.scss';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Root } from './router/Root';
+import { Provider } from 'react-redux';
+import store from './core/store';
 
 
 
 const Index = (): JSX.Element => {
   return (
-    <React.StrictMode>
-      <Router>
-        <Root />
-      </Router>
-    </React.StrictMode>
+    // <React.StrictMode>
+      <Provider store={store}>
+        <Router>
+          <Root />
+        </Router>
+      </Provider>
+    // </React.StrictMode>
   )
 }
 
