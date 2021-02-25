@@ -12,8 +12,7 @@ export const Header: React.FC<HeaderProps> = ({}) => {
         <img className='clicked-anime' src={Cobras} width='80px' height='80px' alt="snake cobra"/>
         <span className='clicked-anime'>Cobras</span>
       </Link>
-      <div className='header__logo flex-row-fc-fc'>
-        <span>Under construction</span>
+      <div className='header__logo picture-construct flex-row-fc-fc'>
       </div>
       <div className='header__logo flex-row-fc-fc'>
         <Link to='/' className='no-outline'>Go to Login</Link>
