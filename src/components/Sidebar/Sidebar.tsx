@@ -36,4 +36,8 @@ const routes = [
     label: 'Music',
     rout: '/main/music',
   },
+  {
+    label: 'About',
+    rout: '/main/About'
+  }
 ]
