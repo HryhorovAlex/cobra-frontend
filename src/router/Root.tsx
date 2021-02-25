@@ -1,6 +1,6 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
-import { Home, SignUp, Login } from "../pages";
+import { SignUp, Login } from "../pages";
 import { Main } from "./Main";
 
 export const Root: React.FC = () => {

@@ -1,7 +1,7 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
 import { Header } from "../components";
-import { Contacts, Home, Groups, Todo, Music } from "../pages";
+import { Contacts, Home, Groups, Todo, Music, About } from "../pages";
 
 export const Main: React.FC = () => {
   return (
@@ -14,6 +14,7 @@ export const Main: React.FC = () => {
         <Route path='/main/groups' render={(props) => <Groups {...props} />} />
         <Route path='/main/todo' render={(props) => <Todo {...props} />} />
         <Route path='/main/music' render={(props) => <Music {...props} />} />
+        <Route path='/main/about' render={(props) => <About {...props} />} />
       </Switch>
     </div>
   );
